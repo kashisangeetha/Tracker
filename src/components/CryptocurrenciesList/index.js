@@ -17,13 +17,13 @@ class CryptocurrenciesList extends Component {
   )
 
   renderCryptocurrenciesView = () => {
-    const {cryptocurrenciesData} = this.props
+    const {cryptoCurrenciesData} = this.props
 
     return (
       <div className="list-container">
-        {this.renderCryptocurrenciesHeader()}
+        {this.renderCryptocurrencies()}
         <ul className="list-container-view">
-          {cryptocurrenciesData.map(eachCryptocurrency => (
+          {cryptoCurrenciesData.map(eachCryptocurrency => (
             <CryptocurrencyItem
               key={eachCryptocurrency.id}
               cryptocurrencyDetails={eachCryptocurrency}
